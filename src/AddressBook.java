@@ -10,6 +10,9 @@ public class AddressBook {
 
 	private Set<BuddyInfo> Buddies;
 
+	public AddressBook() {
+		Buddies = new HashSet<BuddyInfo>();
+	}
 	/**
 	 * main prints the string address book
 	 * @param args string from console
@@ -20,8 +23,15 @@ public class AddressBook {
 		bob.setNickName("joe");
 		bob.setAddress("123 Ave");
 		bob.setPhoneNumber("132-883-9239");
-		System.out.println("Address book");
+		AddressBook addressBook = new AddressBook();
+		addressBook.addBuddies(bob);
+		addressBook.removeBuddies(bob);
+		System.out.println(main2());
 		
+	}
+	
+	public static int main2() {
+		return 0;
 	}
 	
 	/**
