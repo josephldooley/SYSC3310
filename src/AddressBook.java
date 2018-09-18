@@ -26,7 +26,6 @@ public class AddressBook {
 		AddressBook addressBook = new AddressBook();
 		addressBook.addBuddies(bob);
 		addressBook.removeBuddies(bob);
-		System.out.println(main2());
 		
 	}
 	
