@@ -1,7 +1,5 @@
 import java.util.*;
 
-import org.omg.Messaging.SyncScopeHelper;
-
 /**
  * AddressBook hold a collection of all your buddies.
  * 
@@ -17,7 +15,13 @@ public class AddressBook {
 	 * @param args string from console
 	 */
 	public static void main(String[] args) {
+		BuddyInfo bob = new BuddyInfo();
+		bob.setName("jojo");
+		bob.setNickName("joe");
+		bob.setAddress("123 Ave");
+		bob.setPhoneNumber("132-883-9239");
 		System.out.println("Address book");
+		
 	}
 	
 	/**
