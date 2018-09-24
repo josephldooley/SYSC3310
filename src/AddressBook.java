@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * AddressBook hold a collection of all your buddies.
@@ -10,27 +11,23 @@ public class AddressBook {
 
 	private Set<BuddyInfo> Buddies;
 
-	public AddressBook() {
-		Buddies = new HashSet<BuddyInfo>();
-	}
 	/**
 	 * main prints the string address book
 	 * @param args string from console
 	 */
 	public static void main(String[] args) {
-		BuddyInfo bob = new BuddyInfo();
-		bob.setName("jojo");
-		bob.setNickName("joe");
-		bob.setAddress("123 Ave");
-		bob.setPhoneNumber("132-883-9239");
+		BuddyInfo bob = new BuddyInfo("jojo","132-883-9239","123 Ave","joe");
 		AddressBook addressBook = new AddressBook();
 		addressBook.addBuddies(bob);
 		addressBook.removeBuddies(bob);
 		
 	}
 	
-	public static int main2() {
-		return 0;
+	/**
+	 * initializes addressBook to an empty hashset
+	 */
+	public AddressBook() {
+		Buddies = new HashSet<BuddyInfo>();
 	}
 	
 	/**
