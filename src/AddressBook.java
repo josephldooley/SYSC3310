@@ -23,7 +23,7 @@ public class AddressBook {
 	}
 	
 	/**
-	 * initializes addressBook to an empty hashSet
+	 * initializes addressBook to an empty hashSet.
 	 */
 	public AddressBook() {
 		Buddies = new HashSet<BuddyInfo>();
