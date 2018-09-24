@@ -41,6 +41,7 @@ public class AddressBook {
 	
 	/**
 	 * addBuddies adds a buddy, can't add same buddy twice
+	 * 
 	 * @param buddy adds this buddy to your address book
 	 */
 	public void addBuddies(BuddyInfo buddy) {
