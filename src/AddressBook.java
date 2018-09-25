@@ -13,6 +13,7 @@ public class AddressBook {
 
 	/**
 	 * main prints the string address book
+	 * 
 	 * @param args string from console
 	 */
 	public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class AddressBook {
 		AddressBook addressBook = new AddressBook();
 		addressBook.addBuddies(bob);
 		addressBook.removeBuddies(bob);
+		addressBook.length();
 	}
 	
 	/**
@@ -48,5 +50,12 @@ public class AddressBook {
 		Buddies.add(buddy);
 	}
 	
-	
+	/**
+	 * return amount of buddies in addressBook.
+	 * 
+	 * @return amount of buddies in address
+	 */
+	public int length() {
+		return Buddies.size();
+	}
 }
