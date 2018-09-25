@@ -35,7 +35,7 @@ public class AddressBook {
 	 *removeBuddies removes the specified buddy from the 
 	 *collection
 	 *
-	 * @param buddy person you unfriend
+	 * @param buddy person you un-friend
 	 */
 	public void removeBuddies(BuddyInfo buddy) {
 		Buddies.remove(buddy);
